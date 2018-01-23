@@ -1,0 +1,15 @@
+[Unit]
+Description=Vincoin Full Node
+After=network.target
+
+[Service]
+User=vincoin
+Group=vincoin
+WorkingDirectory=/home/vincoin/
+ExecStart=/home/vincoin/vincoind --non-interactive
+ProtectSystem=full
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
