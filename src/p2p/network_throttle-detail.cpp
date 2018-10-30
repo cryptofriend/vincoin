@@ -2,7 +2,8 @@
 /// @author rfree (current maintainer in vincoin.cc project)
 /// @brief implementaion for throttling of connection (count and rate-limit speed etc)
 
-// Copyright (c) 2014-2017, The Vincoin Project
+// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2017-2018, The Vincoin Cash Project
 // 
 // All rights reserved.
 // 
@@ -76,8 +77,8 @@
 // TODO:
 #include "network_throttle-detail.hpp"
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "net.throttle"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "net.throttle"
 
 // ################################################################################################
 // ################################################################################################

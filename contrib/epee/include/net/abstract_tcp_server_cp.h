@@ -42,8 +42,8 @@
 #include "net_utils_base.h"
 #include "pragma_comp_defs.h"
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "net"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "net"
 
 #define LEVIN_DEFAULT_DATA_BUFF_SIZE       2000  
 

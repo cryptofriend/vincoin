@@ -1,4 +1,5 @@
-// Copyright (c) 2014-2017, The Vincoin Project
+// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2017-2018, The Vincoin Cash Project
 //
 // All rights reserved.
 //
@@ -50,8 +51,8 @@ using namespace epee;
 #include "blockchain_db/blockchain_db.h"
 #include "ringct/rctSigs.h"
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "cn"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "cn"
 
 DISABLE_VS_WARNINGS(4355)
 
@@ -303,7 +304,7 @@ namespace cryptonote
       if (boost::filesystem::exists(old_files / "blockchain.bin"))
       {
         MWARNING("Found old-style blockchain.bin in " << old_files.string());
-        MWARNING("Vincoin now uses a new format. You can either remove blockchain.bin to start syncing");
+        MWARNING("Vincoin Cash now uses a new format. You can either remove blockchain.bin to start syncing");
         MWARNING("the blockchain anew, or use vincoin-blockchain-export and vincoin-blockchain-import to");
         MWARNING("convert your existing blockchain.bin to the new format. See README.md for instructions.");
         return false;
@@ -1318,7 +1319,7 @@ namespace cryptonote
     if (!tools::check_updates(software, buildtag, version, hash))
       return false;
 
-    if (tools::vercmp(version.c_str(), VINCOIN_VERSION) <= 0)
+    if (tools::vercmp(version.c_str(), VINCOINCASH_VERSION) <= 0)
       return true;
 
     std::string url = tools::get_update_url(software, subdir, buildtag, version, true);

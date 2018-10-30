@@ -1,4 +1,4 @@
-// Copyright (c) 2016, The Vincoin Project
+// Copyright (c) 2016, The Vincoin Cash Project
 // 
 // All rights reserved.
 // 
@@ -32,8 +32,8 @@
 #include <stdio.h>
 #include "misc_log_ex.h"
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "perf"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "perf"
 
 namespace tools
 {

@@ -1,6 +1,6 @@
-# Vincoin Blockchain Utilities
+# Vincoin Cash Blockchain Utilities
 
-Copyright (c) 2014-2017, The Vincoin Project
+Copyright (c) 2014-2017, The Vincoin Cash Project
 
 ## Introduction
 
@@ -14,13 +14,13 @@ See also each utility's "--help" option.
 
 `$ vincoin-blockchain-export`
 
-This loads the existing blockchain and exports it to `$VINCOIN_DATA_DIR/export/blockchain.raw`
+This loads the existing blockchain and exports it to `$VINCOINCASH_DATA_DIR/export/blockchain.raw`
 
 ### Import the exported file
 
 `$ vincoin-blockchain-import`
 
-This imports blocks from `$VINCOIN_DATA_DIR/export/blockchain.raw` (exported using the
+This imports blocks from `$VINCOINCASH_DATA_DIR/export/blockchain.raw` (exported using the
 `vincoin-blockchain-export` tool as described above) into the current database.
 
 Defaults: `--batch on`, `--batch size 20000`, `--verify on`

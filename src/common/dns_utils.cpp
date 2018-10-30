@@ -1,4 +1,5 @@
-// Copyright (c) 2014-2017, The Vincoin Project
+// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2017-2018, The Vincoin Cash Project
 //
 // All rights reserved.
 //
@@ -39,8 +40,8 @@
 using namespace epee;
 namespace bf = boost::filesystem;
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "net.dns"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "net.dns"
 
 static boost::mutex instance_lock;
 
@@ -484,7 +485,7 @@ bool load_txt_records_from_dns(std::vector<std::string> &good_records, const std
 
   if (num_valid_records < 2)
   {
-    LOG_PRINT_L0("WARNING: no two valid VincoinPulse DNS checkpoint records were received");
+    LOG_PRINT_L0("WARNING: no two valid VincoinCashPulse DNS checkpoint records were received");
     return false;
   }
 
@@ -506,7 +507,7 @@ bool load_txt_records_from_dns(std::vector<std::string> &good_records, const std
 
   if (good_records_index < 0)
   {
-    LOG_PRINT_L0("WARNING: no two VincoinPulse DNS checkpoint records matched");
+    LOG_PRINT_L0("WARNING: no two VincoinCashPulse DNS checkpoint records matched");
     return false;
   }
 

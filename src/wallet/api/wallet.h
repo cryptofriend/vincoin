@@ -1,4 +1,5 @@
-// Copyright (c) 2014-2017, The Vincoin Project
+// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2017-2018, The Vincoin Cash Project
 //
 // All rights reserved.
 //
@@ -40,7 +41,7 @@
 #include <boost/thread/condition_variable.hpp>
 
 
-namespace Vincoin {
+namespace VincoinCash {
 class TransactionHistoryImpl;
 class PendingTransactionImpl;
 class UnsignedTransactionImpl;
@@ -182,7 +183,7 @@ private:
 
 } // namespace
 
-namespace Bitvincoin = Vincoin;
+namespace Bitvincoin = VincoinCash;
 
 #endif
 

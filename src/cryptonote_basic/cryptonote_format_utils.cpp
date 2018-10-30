@@ -1,4 +1,5 @@
-// Copyright (c) 2014-2017, The Vincoin Project
+// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2017-2018, The Vincoin Cash Project
 // 
 // All rights reserved.
 // 
@@ -38,8 +39,8 @@ using namespace epee;
 #include "crypto/hash.h"
 #include "ringct/rctSigs.h"
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "cn"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "cn"
 
 #define ENCRYPTED_PAYMENT_ID_TAIL 0x8d
 

@@ -33,8 +33,8 @@
 #include "abstract_tcp_server2.h"
 #include "http_protocol_handler.h"
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "net.http"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "net.http"
 
 namespace epee
 {

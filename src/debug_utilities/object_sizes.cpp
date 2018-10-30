@@ -1,4 +1,4 @@
-// Copyright (c) 2017, The Vincoin Project
+// Copyright (c) 2017, The Vincoin Cash Project
 //
 // All rights reserved.
 //
@@ -43,8 +43,8 @@
 #include "wallet/api/unsigned_transaction.h"
 #include "wallet/api/pending_transaction.h"
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "debugtools.objectsizes"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "debugtools.objectsizes"
 
 class size_logger
 {
@@ -105,12 +105,12 @@ int main(int argc, char* argv[])
   SL(tools::wallet2::unsigned_tx_set);
   SL(tools::wallet2::signed_tx_set);
 
-  SL(Vincoin::WalletImpl);
-  SL(Vincoin::AddressBookRow);
-  SL(Vincoin::TransactionInfoImpl);
-  SL(Vincoin::TransactionHistoryImpl);
-  SL(Vincoin::PendingTransactionImpl);
-  SL(Vincoin::UnsignedTransactionImpl);
+  SL(VincoinCash::WalletImpl);
+  SL(VincoinCash::AddressBookRow);
+  SL(VincoinCash::TransactionInfoImpl);
+  SL(VincoinCash::TransactionHistoryImpl);
+  SL(VincoinCash::PendingTransactionImpl);
+  SL(VincoinCash::UnsignedTransactionImpl);
 
   return 0;
 }

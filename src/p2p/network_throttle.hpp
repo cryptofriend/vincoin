@@ -2,7 +2,8 @@
 /// @author rfree (current maintainer in vincoin.cc project)
 /// @brief interface for throttling of connection (count and rate-limit speed etc)
 
-// Copyright (c) 2014-2017, The Vincoin Project
+// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2017-2018, The Vincoin Cash Project
 // 
 // All rights reserved.
 // 

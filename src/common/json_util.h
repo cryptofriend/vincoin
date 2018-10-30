@@ -1,4 +1,4 @@
-// Copyright (c) 2016, The Vincoin Project
+// Copyright (c) 2016, The Vincoin Cash Project
 // 
 // All rights reserved.
 // 

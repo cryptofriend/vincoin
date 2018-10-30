@@ -1,4 +1,4 @@
-// Copyright (c) 2017, The Vincoin Project
+// Copyright (c) 2017, The Vincoin Cash Project
 // 
 // All rights reserved.
 // 
@@ -36,8 +36,8 @@
 #include "net/http_client.h"
 #include "download.h"
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "net.dl"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "net.dl"
 
 namespace tools
 {

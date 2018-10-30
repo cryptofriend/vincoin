@@ -1,4 +1,5 @@
-// Copyright (c) 2014-2017, The Vincoin Project
+// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2017-2018, The Vincoin Cash Project
 // 
 // All rights reserved.
 // 
@@ -34,7 +35,7 @@
 
 namespace daemon_args
 {
-  std::string const WINDOWS_SERVICE_NAME = "Vincoin Daemon";
+  std::string const WINDOWS_SERVICE_NAME = "Vincoin Cash Daemon";
 
   const command_line::arg_descriptor<std::string> arg_config_file = {
     "config-file"

@@ -1,26 +1,26 @@
-# Vincoin
+# Vincoin Cash
 
-Copyright (c) 2017-2018, The Vincoin Project  
-Copyright (c) 2014-2017, The Monero Project  
+Copyright (c) 2017-2018, The Vincoin Cash Project
+Copyright (c) 2014-2017, The Monero Project
 Portions Copyright (c) 2012-2013, The Cryptonote developers
 
 ## Introduction
 
-Vincoin is a private, secure, untraceable, decentralised digital currency. You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so.
+Vincoin Cash is a private, secure, untraceable, decentralised digital currency. You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so.
 
-**Privacy:** Vincoin uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain absolutely private by default.
+**Privacy:** Vincoin Cash uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain absolutely private by default.
 
 **Security:** Using the power of a distributed peer-to-peer consensus network, every transaction on the network is cryptographically secured. Individual wallets have a 25 word mnemonic seed that is only displayed once, and can be written down to backup the wallet. Wallet files are encrypted with a passphrase to ensure they are useless if stolen.
 
-**Untraceability:** By taking advantage of ring signatures, a special property of a certain type of cryptography, Vincoin is able to ensure that transactions are not only untraceable, but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer.
+**Untraceability:** By taking advantage of ring signatures, a special property of a certain type of cryptography, Vincoin Cash is able to ensure that transactions are not only untraceable, but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer.
 
 ## About this Project
 
-This is the core implementation of Vincoin. It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of Vincoin that uses the protocol and network in a compatible manner.
+This is the core implementation of Vincoin Cash. It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of Vincoin Cash that uses the protocol and network in a compatible manner.
 
 As with many development projects, the repository on Github is considered to be the "staging" area for the latest changes. Before changes are merged into that branch on the main repository, they are tested by individual developers in their own branches, submitted as a pull request, and then subsequently tested by contributors who focus on testing and code reviews. That having been said, the repository should be carefully considered before using it in a production environment, unless there is a patch in the repository for a particular show-stopping issue you are experiencing. It is generally a better idea to use a tagged release for stability.
 
-**Anyone is welcome to contribute to Vincoin's codebase!** If you have a fix or code change, feel free to submit it as a pull request directly to the "master" branch. In cases where the change is relatively small or does not affect other parts of the codebase it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
+**Anyone is welcome to contribute to Vincoin Cash's codebase!** If you have a fix or code change, feel free to submit it as a pull request directly to the "master" branch. In cases where the change is relatively small or does not affect other parts of the codebase it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
 
 ## License
 
@@ -34,7 +34,7 @@ If you want to help out, see [CONTRIBUTING](CONTRIBUTING.md) for a set of guidel
 
 See [Vulnerability Response Process](VULNERABILITY_RESPONSE_PROCESS.md).
 
-## Compiling Vincoin from Source
+## Compiling Vincoin Cash from Source
 
 ### Dependencies
 
@@ -69,7 +69,7 @@ build the library binary manually. This can be done with the following command `
 
 ### Build instructions
 
-Vincoin uses the CMake build system and a top-level [Makefile](Makefile) that
+Vincoin Cash uses the CMake build system and a top-level [Makefile](Makefile) that
 invokes cmake commands as needed.
 
 #### On Linux and OS X
@@ -89,7 +89,7 @@ invokes cmake commands as needed.
 
 * Add `PATH="$PATH:$HOME/vincoin/build/release/bin"` to `.profile`
 
-* Run Vincoin with `vincoind --detach`
+* Run Vincoin Cash with `vincoind --detach`
 
 * **Optional**: build and run the test suite to verify the binaries:
 
@@ -115,7 +115,7 @@ Tested on a Raspberry Pi 2 with a clean install of minimal Debian Jessie from ht
 
 * `apt-get update && apt-get upgrade` to install all of the latest software
 
-* Install the dependencies for Vincoin except libunwind and libboost-all-dev
+* Install the dependencies for Vincoin Cash except libunwind and libboost-all-dev
 
 * Increase the system swap size:
 ```	
@@ -150,7 +150,7 @@ Tested on a Raspberry Pi 2 with a clean install of minimal Debian Jessie from ht
 
 * Add `PATH="$PATH:$HOME/vincoin/build/release/bin"` to `.profile`
 
-* Run Vincoin with `vincoind --detach`
+* Run Vincoin Cash with `vincoind --detach`
 
 * You may wish to reduce the size of the swap file after the build has finished, and delete the boost directory from your home directory
 
@@ -207,7 +207,7 @@ application.
 
 The project can be built from scratch by following instructions for Linux above. If you are running vincoin in a jail you need to add the flag: `allow.sysvipc=1` to your jail configuration, otherwise lmdb will throw the error message: `Failed to open lmdb environment: Function not implemented`.
 
-We expect to add Vincoin into the ports tree in the near future, which will aid in managing installations using ports or packages.
+We expect to add Vincoin Cash into the ports tree in the near future, which will aid in managing installations using ports or packages.
 
 ### On OpenBSD:
 
@@ -220,7 +220,7 @@ The doxygen and graphviz packages are optional and require the xbase set.
 The Boost package has a bug that will prevent librpc.a from building correctly. In order to fix this, you will have to Build boost yourself from scratch. Follow the directions here (under "Building Boost"):
 https://github.com/bitcoin/bitcoin/blob/master/doc/build-openbsd.md
 
-You will have to add the serialization, date_time, and regex modules to Boost when building as they are needed by Vincoin.
+You will have to add the serialization, date_time, and regex modules to Boost when building as they are needed by Vincoin Cash.
 
 To build: `env CC=egcc CXX=eg++ CPP=ecpp DEVELOPER_LOCAL_TOOLS=1 BOOST_ROOT=/path/to/the/boost/you/built make release-static-64`
 
@@ -279,7 +279,7 @@ See [README.i18n.md](README.i18n.md).
 
 ## Using Tor
 
-While Vincoin isn't made to integrate with Tor, it can be used wrapped with torsocks, if you add --p2p-bind-ip 127.0.0.1 to the vincoind command line. You also want to set DNS requests to go over TCP, so they'll be routed through Tor, by setting DNS_PUBLIC=tcp. You may also disable IGD (UPnP port forwarding negotiation), which is pointless with Tor. To allow local connections from the wallet, you might have to add TORSOCKS_ALLOW_INBOUND=1, some OSes need it and some don't. Example:
+While Vincoin Cash isn't made to integrate with Tor, it can be used wrapped with torsocks, if you add --p2p-bind-ip 127.0.0.1 to the vincoind command line. You also want to set DNS requests to go over TCP, so they'll be routed through Tor, by setting DNS_PUBLIC=tcp. You may also disable IGD (UPnP port forwarding negotiation), which is pointless with Tor. To allow local connections from the wallet, you might have to add TORSOCKS_ALLOW_INBOUND=1, some OSes need it and some don't. Example:
 
 `DNS_PUBLIC=tcp torsocks vincoind --p2p-bind-ip 127.0.0.1 --no-igd`
 
@@ -305,7 +305,7 @@ Note: rlwrap will save things like your seed and private keys, if you supply the
 
 # Debugging
 
-This section contains general instructions for debugging failed installs or problems encountered with Vincoin. First ensure you are running the latest version built from the github repo.
+This section contains general instructions for debugging failed installs or problems encountered with Vincoin Cash. First ensure you are running the latest version built from the github repo.
 
 ## Obtaining Stack Traces and Core Dumps on Unix Systems
 

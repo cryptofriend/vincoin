@@ -2,7 +2,7 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="fr_FR">
 <context>
-    <name>Vincoin::AddressBookImpl</name>
+    <name>VincoinCash::AddressBookImpl</name>
     <message>
         <location filename="../src/wallet/api/address_book.cpp" line="55"/>
         <source>Invalid destination address</source>
@@ -25,7 +25,7 @@
     </message>
 </context>
 <context>
-    <name>Vincoin::PendingTransactionImpl</name>
+    <name>VincoinCash::PendingTransactionImpl</name>
     <message>
         <location filename="../src/wallet/api/pending_transaction.cpp" line="90"/>
         <source>Attempting to save transaction to file, but specified file(s) exist. Exiting to not risk overwriting. File:</source>
@@ -68,7 +68,7 @@
     </message>
 </context>
 <context>
-    <name>Vincoin::UnsignedTransactionImpl</name>
+    <name>VincoinCash::UnsignedTransactionImpl</name>
     <message>
         <location filename="../src/wallet/api/unsigned_transaction.cpp" line="75"/>
         <source>This is a watch only wallet</source>
@@ -122,7 +122,7 @@
     </message>
 </context>
 <context>
-    <name>Vincoin::WalletImpl</name>
+    <name>VincoinCash::WalletImpl</name>
     <message>
         <location filename="../src/wallet/api/wallet.cpp" line="942"/>
         <source>payment id has invalid format, expected 16 or 64 character hex string: </source>
@@ -316,7 +316,7 @@
     </message>
 </context>
 <context>
-    <name>Vincoin::WalletManagerImpl</name>
+    <name>VincoinCash::WalletManagerImpl</name>
     <message>
         <location filename="../src/wallet/api/wallet_manager.cpp" line="192"/>
         <source>failed to parse txid</source>
@@ -2475,8 +2475,8 @@ Sorties par * : </translation>
     </message>
     <message>
         <location filename="../src/common/dns_utils.cpp" line="439"/>
-        <source> Vincoin Address = </source>
-        <translation> Adresse Vincoin = </translation>
+        <source> Vincoin Cash Address = </source>
+        <translation> Adresse Vincoin Cash = </translation>
     </message>
     <message>
         <location filename="../src/common/dns_utils.cpp" line="441"/>

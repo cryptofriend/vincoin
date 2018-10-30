@@ -1,4 +1,5 @@
-// Copyright (c) 2014-2017, The Vincoin Project
+// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2017-2018, The Vincoin Cash Project
 // 
 // All rights reserved.
 // 
@@ -36,12 +37,12 @@
 
 #include <string>
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "daemon"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "daemon"
 
 namespace daemonize
 {
-  std::string const t_executor::NAME = "Vincoin Daemon";
+  std::string const t_executor::NAME = "Vincoin Cash Daemon";
 
   void t_executor::init_options(
       boost::program_options::options_description & configurable_options
@@ -59,7 +60,7 @@ namespace daemonize
       boost::program_options::variables_map const & vm
     )
   {
-    LOG_PRINT_L0("Vincoin '" << VINCOIN_RELEASE_NAME << "' (v" << VINCOIN_VERSION_FULL << ") Daemonised");
+    LOG_PRINT_L0("Vincoin Cash '" << VINCOINCASH_RELEASE_NAME << "' (v" << VINCOINCASH_VERSION_FULL << ") Daemonised");
     return t_daemon{vm};
   }
 

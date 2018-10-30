@@ -1,5 +1,5 @@
 [Unit]
-Description=Vincoin Full Node
+Description=Vincoin Cash Full Node
 After=network.target
 
 [Service]

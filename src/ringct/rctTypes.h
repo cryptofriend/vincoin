@@ -1,4 +1,4 @@
-// Copyright (c) 2016, Vincoin Research Labs
+// Copyright (c) 2016, Monero Research Labs
 //
 // Author: Shen Noether <shen.noether@gmx.com>
 //

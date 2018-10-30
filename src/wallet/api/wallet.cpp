@@ -1,4 +1,5 @@
-// Copyright (c) 2014-2017, The Vincoin Project
+// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2017-2018, The Vincoin Cash Project
 //
 // All rights reserved.
 //
@@ -45,10 +46,10 @@
 using namespace std;
 using namespace cryptonote;
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "WalletAPI"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "WalletAPI"
 
-namespace Vincoin {
+namespace VincoinCash {
 
 namespace {
     // copy-pasted from simplewallet
@@ -1442,4 +1443,4 @@ bool WalletImpl::useForkRules(uint8_t version, int64_t early_blocks) const
 
 } // namespace
 
-namespace Bitvincoin = Vincoin;
+namespace Bitvincoin = VincoinCash;

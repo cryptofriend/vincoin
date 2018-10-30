@@ -41,7 +41,8 @@
 #include <boost/utility/value_init.hpp>
 #include <boost/asio/deadline_timer.hpp>
 #include <boost/date_time/posix_time/posix_time.hpp> // TODO
-#include <boost/thread/v2/thread.hpp> // TODO
+#include <boost/thread/thread.hpp> // TODO
+#include <boost/thread/condition_variable.hpp> // TODO
 #include "misc_language.h"
 #include "pragma_comp_defs.h"
 
@@ -51,8 +52,8 @@
 
 #include "../../../../src/cryptonote_core/cryptonote_core.h" // e.g. for the send_stop_signal()
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "net"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "net"
 
 #define CONNECTION_CLEANUP_TIME 30 // seconds
 

@@ -1,4 +1,5 @@
-// Copyright (c) 2014-2017, The Vincoin Project
+// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2017-2018, The Vincoin Cash Project
 //
 // All rights reserved.
 //
@@ -49,8 +50,8 @@
 #include "common/stack_trace.h"
 #endif // STACK_TRACE
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "daemon"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "daemon"
 
 namespace po = boost::program_options;
 namespace bf = boost::filesystem;
@@ -120,16 +121,16 @@ int main(int argc, char const * argv[])
 
     if (command_line::get_arg(vm, command_line::arg_help))
     {
-      std::cout << "Vincoin '" << VINCOIN_RELEASE_NAME << "' (v" << VINCOIN_VERSION_FULL << ")" << ENDL << ENDL;
+      std::cout << "Vincoin Cash '" << VINCOINCASH_RELEASE_NAME << "' (v" << VINCOINCASH_VERSION_FULL << ")" << ENDL << ENDL;
       std::cout << "Usage: " + std::string{argv[0]} + " [options|settings] [daemon_command...]" << std::endl << std::endl;
       std::cout << visible_options << std::endl;
       return 0;
     }
 
-    // Vincoin Version
+    // Vincoin Cash Version
     if (command_line::get_arg(vm, command_line::arg_version))
     {
-      std::cout << "Vincoin '" << VINCOIN_RELEASE_NAME << "' (v" << VINCOIN_VERSION_FULL << ")" << ENDL;
+      std::cout << "Vincoin Cash '" << VINCOINCASH_RELEASE_NAME << "' (v" << VINCOINCASH_VERSION_FULL << ")" << ENDL;
       return 0;
     }
 
@@ -276,7 +277,7 @@ int main(int argc, char const * argv[])
       tools::set_max_concurrency(command_line::get_arg(vm, daemon_args::arg_max_concurrency));
 
     // logging is now set up
-    MGINFO("Vincoin '" << VINCOIN_RELEASE_NAME << "' (v" << VINCOIN_VERSION_FULL << ")");
+    MGINFO("Vincoin Cash '" << VINCOINCASH_RELEASE_NAME << "' (v" << VINCOINCASH_VERSION_FULL << ")");
 
     MINFO("Moving from main() into the daemonize now.");
 

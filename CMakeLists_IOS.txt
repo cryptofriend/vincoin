@@ -1,6 +1,6 @@
-# Portions Copyright (c) 2017, The Vincoin Project
+# Portions Copyright (c) 2017, The Vincoin Cash Project
 # This file is based off of the https://code.google.com/archive/p/ios-cmake/
-# It has been altered for Vincoin iOS development
+# It has been altered for Vincoin Cash iOS development
 #
 #
 # Options:

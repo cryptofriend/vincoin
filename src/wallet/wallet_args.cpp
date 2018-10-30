@@ -1,4 +1,5 @@
-// Copyright (c) 2014-2017, The Vincoin Project
+// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2017-2018, The Vincoin Cash Project
 //
 // All rights reserved.
 //
@@ -40,8 +41,8 @@
 #include <crtdbg.h>
 #endif
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "wallet.wallet2"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "wallet.wallet2"
 
 // workaround for a suspected bug in pthread/kernel on MacOS X
 #ifdef __APPLE__
@@ -149,7 +150,7 @@ namespace wallet_args
 
     if (command_line::get_arg(vm, command_line::arg_help))
     {
-      tools::msg_writer() << "Vincoin '" << VINCOIN_RELEASE_NAME << "' (v" << VINCOIN_VERSION_FULL << ")" << ENDL;
+      tools::msg_writer() << "Vincoin Cash '" << VINCOINCASH_RELEASE_NAME << "' (v" << VINCOINCASH_VERSION_FULL << ")" << ENDL;
       tools::msg_writer() << wallet_args::tr("This is the command line vincoin wallet. It needs to connect to a vincoin\n"
 												"daemon to work correctly.") << ENDL;
       tools::msg_writer() << wallet_args::tr("Usage:") << ENDL << "  " << usage;
@@ -158,19 +159,19 @@ namespace wallet_args
     }
     else if (command_line::get_arg(vm, command_line::arg_version))
     {
-      tools::msg_writer() << "Vincoin '" << VINCOIN_RELEASE_NAME << "' (v" << VINCOIN_VERSION_FULL << ")";
+      tools::msg_writer() << "Vincoin Cash '" << VINCOINCASH_RELEASE_NAME << "' (v" << VINCOINCASH_VERSION_FULL << ")";
       return boost::none;
     }
 
     if(command_line::has_arg(vm, arg_max_concurrency))
       tools::set_max_concurrency(command_line::get_arg(vm, arg_max_concurrency));
 
-    tools::scoped_message_writer(epee::console_color_white, true) << "Vincoin '" << VINCOIN_RELEASE_NAME << "' (v" << VINCOIN_VERSION_FULL << ")";
+    tools::scoped_message_writer(epee::console_color_white, true) << "Vincoin Cash '" << VINCOINCASH_RELEASE_NAME << "' (v" << VINCOINCASH_VERSION_FULL << ")";
 
     if (!vm["log-level"].defaulted())
       MINFO("Setting log level = " << command_line::get_arg(vm, arg_log_level));
     else
-      MINFO("Setting log levels = " << getenv("VINCOIN_LOGS"));
+      MINFO("Setting log levels = " << getenv("VINCOINCASH_LOGS"));
     MINFO(wallet_args::tr("Logging to: ") << log_path);
     tools::scoped_message_writer(epee::console_color_white, true) << boost::format(wallet_args::tr("Logging to %s")) % log_path;
 

@@ -1,4 +1,5 @@
-// Copyright (c) 2014-2017, The Vincoin Project
+// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2017-2018, The Vincoin Cash Project
 // 
 // All rights reserved.
 // 
@@ -30,8 +31,8 @@
 #include "version.h"
 #include "daemon/command_server.h"
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "daemon"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "daemon"
 
 namespace daemonize {
 
@@ -300,7 +301,7 @@ bool t_command_server::help(const std::vector<std::string>& args)
 std::string t_command_server::get_commands_str()
 {
   std::stringstream ss;
-  ss << "Vincoin '" << VINCOIN_RELEASE_NAME << "' (v" << VINCOIN_VERSION_FULL << ")" << std::endl;
+  ss << "Vincoin Cash '" << VINCOINCASH_RELEASE_NAME << "' (v" << VINCOINCASH_VERSION_FULL << ")" << std::endl;
   ss << "Commands: " << std::endl;
   std::string usage = m_command_lookup.get_usage();
   boost::replace_all(usage, "\n", "\n  ");

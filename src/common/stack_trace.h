@@ -1,4 +1,4 @@
-// Copyright (c) 2016, The Vincoin Project
+// Copyright (c) 2016, The Vincoin Cash Project
 // 
 // All rights reserved.
 // 
@@ -26,8 +26,8 @@
 // STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 // THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#ifndef VINCOIN_EXCEPTION_H
-#define VINCOIN_EXCEPTION_H
+#ifndef VINCOINCASH_EXCEPTION_H
+#define VINCOINCASH_EXCEPTION_H
 
 #include <string>
 

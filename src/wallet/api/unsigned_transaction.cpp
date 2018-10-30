@@ -1,4 +1,5 @@
-// Copyright (c) 2014-2017, The Vincoin Project
+// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2017-2018, The Vincoin Cash Project
 //
 // All rights reserved.
 //
@@ -42,7 +43,7 @@
 
 using namespace std;
 
-namespace Vincoin {
+namespace VincoinCash {
 
 UnsignedTransaction::~UnsignedTransaction() {}
 
@@ -280,5 +281,5 @@ uint64_t UnsignedTransactionImpl::minMixinCount() const
 
 } // namespace
 
-namespace Bitvincoin = Vincoin;
+namespace Bitvincoin = VincoinCash;
 

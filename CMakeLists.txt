@@ -1,4 +1,4 @@
-# Copyright (c) 2014-2017, The Vincoin Project
+# Copyright (c) 2014-2017, The Vincoin Cash Project
 #
 # All rights reserved.
 #
@@ -237,7 +237,7 @@ if(STATIC)
 endif()
 
 # Set default blockchain storage location:
-# memory was the default in Cryptonote before Vincoin implimented LMDB, it still works but is unneccessary.
+# memory was the default in Cryptonote before Vincoin Cash implimented LMDB, it still works but is unneccessary.
 # set(DATABASE memory)
 set(DATABASE lmdb)
 

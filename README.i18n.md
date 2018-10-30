@@ -1,9 +1,9 @@
-Vincoin daemon internationalization
+Vincoin Cash daemon internationalization
 ==================================
 
-The Vincoin command line tools can be translated in various languages.
+The Vincoin Cash command line tools can be translated in various languages.
 
-In order to use the same translation workflow as the [Vincoin Core GUI](https://github.com/vincoin-project/vincoin-core), they use Qt Linguist translation files.  However, to avoid the dependencies on Qt this normally implies, they use a custom loader to read those files at runtime.
+In order to use the same translation workflow as the [Vincoin Cash Core GUI](https://github.com/vincoin-project/vincoin-core), they use Qt Linguist translation files.  However, to avoid the dependencies on Qt this normally implies, they use a custom loader to read those files at runtime.
 
 ### Tools for translators
 

@@ -1,4 +1,4 @@
-# Contributing to Vincoin
+# Contributing to Vincoin Cash
 
 A good way to help is to test, and report bugs. See
 [How to Report Bugs Effectively (by Simon Tatham)](http://www.chiark.greenend.org.uk/~sgtatham/bugs.html)

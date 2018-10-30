@@ -1,4 +1,5 @@
-// Copyright (c) 2014-2017, The Vincoin Project
+// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2017-2018, The Vincoin Cash Project
 //
 // All rights reserved.
 //
@@ -39,8 +40,8 @@ using namespace epee;
 #include <sstream>
 #include <random>
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "checkpoints"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "checkpoints"
 
 namespace cryptonote
 {
@@ -137,11 +138,12 @@ namespace cryptonote
 
   bool checkpoints::init_default_checkpoints()
   {
-    ADD_CHECKPOINT(1,       "1e99882dfb18bd5282e048d5286fce43aa24bcce97bc8c2b1d0a119973c18ecc");
-    ADD_CHECKPOINT(10,      "679ffb5ec97236e797d78eee9136b164f7c4db2a1f40af0111ee5248cbe638ab");
-    ADD_CHECKPOINT(100,     "e8a8d4080a9fb51cc8c7562d0c6ab05f0a76ceb81b9784cb5e6536268a767061");
-    ADD_CHECKPOINT(180,     "4a60fc9694466926cc09a8adc7113b8df5bb333208e96e959d076ded7709e5b5");
-    ADD_CHECKPOINT(220,     "be34b8c3b490ed1371165a4909350a1029036f720eec6bb3c8ac9d72ba09c96a");
+    ADD_CHECKPOINT(110000,   "1a6954bd649e03366269ff9de036660eff021bf2d7b7d20d936d580b57e14699");
+    ADD_CHECKPOINT(132961,   "9c2e5a8b4a62351a5099fa64a77eadc48ad89fd780a4cc040a85397e3a0cdaf3");
+    ADD_CHECKPOINT(161800,   "98d305524d6776bdaebf94e5f2ae199b5f8e102d03b9f33198466b7afa9d93a3");
+    ADD_CHECKPOINT(181120,   "236ffdc0471f31ebd4f59b498d85cfd29fa2b760b57a1611bbe6009822ba4c98");
+    ADD_CHECKPOINT(184120,   "e0a69652d154723de62a246b793700827ba545ec7564b25c0dec233b132ea0da");
+    ADD_CHECKPOINT(207356,   "3d8ae2119cf8cbf0e9af3fab60b39c2633967bcf4d38db78898cc81fb2082e45");
 
     return true;
   }
@@ -182,7 +184,7 @@ namespace cryptonote
   {
     std::vector<std::string> records;
 
-    // All four VincoinPulse domains have DNSSEC on and valid
+    // All four VincoinCashPulse domains have DNSSEC on and valid
     static const std::vector<std::string> dns_urls = { "checkpoints.vietcoin.io"
     };
 

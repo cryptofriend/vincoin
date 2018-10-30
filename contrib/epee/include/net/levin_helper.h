@@ -31,8 +31,8 @@
 #include "levin_base.h"
 #include "serializeble_struct_helper.h"
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "net"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "net"
 
 namespace epee
 {

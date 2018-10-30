@@ -1,4 +1,4 @@
-// Copyright (c) 2017, The Vincoin Project
+// Copyright (c) 2017, The Vincoin Cash Project
 // 
 // All rights reserved.
 // 
@@ -34,8 +34,8 @@
 #include "cryptonote_protocol_defs.h"
 #include "block_queue.h"
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "cn.block_queue"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "cn.block_queue"
 
 namespace std {
   static_assert(sizeof(size_t) <= sizeof(boost::uuids::uuid), "boost::uuids::uuid too small");

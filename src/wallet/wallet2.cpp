@@ -1,4 +1,5 @@
-// Copyright (c) 2014-2017, The Vincoin Project
+// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2017-2018, The Vincoin Cash Project
 // 
 // All rights reserved.
 // 
@@ -67,8 +68,8 @@ extern "C"
 }
 using namespace cryptonote;
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "wallet.wallet2"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "wallet.wallet2"
 
 // used to choose when to stop adding outputs to a tx
 #define APPROXIMATE_INPUT_BYTES 80
@@ -79,8 +80,8 @@ using namespace cryptonote;
 // arbitrary, used to generate different hashes from the same input
 #define CHACHA8_KEY_TAIL 0x8c
 
-#define UNSIGNED_TX_PREFIX "Vincoin unsigned tx set\003"
-#define SIGNED_TX_PREFIX "Vincoin signed tx set\003"
+#define UNSIGNED_TX_PREFIX "Vincoin Cash unsigned tx set\003"
+#define SIGNED_TX_PREFIX "Vincoin Cash signed tx set\003"
 
 #define RECENT_OUTPUT_RATIO (0.5) // 50% of outputs are from the recent zone
 #define RECENT_OUTPUT_ZONE ((time_t)(1.8 * 86400)) // last 1.8 day makes up the recent zone (taken from vincoinlink.pdf, Miller et al)
@@ -97,7 +98,7 @@ using namespace cryptonote;
       ioservice.stop(); \
     } while(0)
 
-#define KEY_IMAGE_EXPORT_FILE_MAGIC "Vincoin key image export\002"
+#define KEY_IMAGE_EXPORT_FILE_MAGIC "Vincoin Cash key image export\002"
 
 namespace
 {

@@ -27,8 +27,8 @@
 
 #pragma comment(lib, "Ws2_32.lib")
 
-#undef VINCOIN_DEFAULT_LOG_CATEGORY
-#define VINCOIN_DEFAULT_LOG_CATEGORY "net"
+#undef VINCOINCASH_DEFAULT_LOG_CATEGORY
+#define VINCOINCASH_DEFAULT_LOG_CATEGORY "net"
 
 namespace epee
 {
